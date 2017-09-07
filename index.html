@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#24292e">
+    <link rel="icon" sizes="192x192" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test-task</title>
+</head>
+
+<body>
+    <img src="ajax-loader.gif" alt="loader" id="loader">
+<!--    первый вариант прокрутки наверх
+    <a href="#" onClick="scroll(0,0); return false" title="up">-->
+       <div onclick="up();">
+        <i onclick="up();" id="bottomup" class="fa fa-arrow-up fa-4x" aria-hidden="true"></i>
+        </div>
+<!--    </a>-->
+    <header class="top">
+        <h1 class="wrapper">Image view</h1>
+    </header>
+    <div class="center">
+        <button id="btnloading" onclick="loadPictures()">Load pictures</button>
+    </div>
+    <div class="wrapper main">
+        <main class="container">
+            <ul id="listingTable"></ul>
+            <div id="bottom">
+                <a href="javascript:prevPage()" id="btn_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><span id="page"></span>
+                <a href="javascript:nextPage()" id="btn_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+        </main>
+        <aside id="aside">
+            <h2>Filter by</h2>
+            <h3>Size</h3>
+            <form class="filtering">
+                <label for="large" onclick="large()"><input type="radio" id="large" name="sizes" value="large">
+                Large</label>
+                <label for="medium" onclick="medium()"><input type="radio" id="medium" name="sizes" value="medium">
+                Medium</label>
+                <label for="small" onclick="small()"><input type="radio" id="small" name="sizes" value="small">
+                Small</label>
+            </form>
+            <h3>Author</h3>
+            <div>
+                <div id="info"></div>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p>testing task 2017 for Runok.LAB</p>
+    </footer>
+
+    <script src="https://use.fontawesome.com/c9a3b4e204.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
