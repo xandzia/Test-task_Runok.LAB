@@ -106,7 +106,7 @@ function showPage(cam) {
 
         listing_table.innerHTML = "";
 
-        for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < cam.length+20; i++) {
+        for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < cam.length; i++) {
             listing_table.innerHTML += '<li class="num"><a class="lightbox" href="#' + cam[i].filename + '"><img src="https://unsplash.it/' + cam[i].filename + '" alt="author ' + cam[i].author + '"/></a><div class="lightbox-target" id="' + cam[i].filename + '"><img src="https://unsplash.it/' + cam[i].filename + '" alt="author ' + cam[i].author + '"/><a class="lightbox-close" href="#"></a></div></li>';
         }
         page_span.innerHTML = page + "/" + numPages();
@@ -167,8 +167,8 @@ function large() {
     });
     deleteNums();
     console.log( bigImg );      
-    showPage(bigImg);
     addNums(bigImg);
+    showPage(bigImg);
 //    dropDownAuthors(bigImg);
 
 };
@@ -183,8 +183,8 @@ function medium() {
     });
     deleteNums();
     console.log( medImg );      
-    showPage(medImg);
     addNums(medImg);
+    showPage(medImg);
 //    dropDownAuthors(medImg);
 
 };
@@ -196,8 +196,8 @@ function small() {
     });
     deleteNums();
     console.log( smallImg );      
-    showPage(smallImg);
     addNums(smallImg);
+    showPage(smallImg);
 //    dropDownAuthors(smallImg);
 
 };
