@@ -72,7 +72,7 @@ function dropDownAuthors(author) {
             }
         });
         return results;
-    };      
+    };
 };
 
 
@@ -157,7 +157,7 @@ function deleteNums() {
     }
 //    while(authorList[0]) {
 //        authorList[0].parentNode.removeChild(authorList[0]);
-//    };   
+//    };
 };
 
 
@@ -166,7 +166,7 @@ function large() {
         return anim.width >= 1500;
     });
     deleteNums();
-    console.log( bigImg );      
+    console.log( bigImg );
     addNums(bigImg);
     showPage(bigImg);
 //    dropDownAuthors(bigImg);
@@ -182,7 +182,7 @@ function medium() {
         }
     });
     deleteNums();
-    console.log( medImg );      
+    console.log( medImg );
     addNums(medImg);
     showPage(medImg);
 //    dropDownAuthors(medImg);
@@ -195,7 +195,7 @@ function small() {
         return anim.width <= 799;
     });
     deleteNums();
-    console.log( smallImg );      
+    console.log( smallImg );
     addNums(smallImg);
     showPage(smallImg);
 //    dropDownAuthors(smallImg);
@@ -210,7 +210,7 @@ var xaxa = document.getElementById("mySelect").value;
         return anim.author === xaxa;
     });
     deleteNums();
-    console.log( filterImg );      
+    console.log( filterImg );
     showPage(filterImg);
     addNums(filterImg);
 //    dropDownAuthors(smallImg);
@@ -220,8 +220,8 @@ var xaxa = document.getElementById("mySelect").value;
 // показать при скроле    - первый вариант прокрутки наверх
 //var lastScrollTop = 0;
 //
-//window.addEventListener("scroll", function(){  
-//   var st = window.pageYOffset || document.documentElement.scrollTop;  
+//window.addEventListener("scroll", function(){
+//   var st = window.pageYOffset || document.documentElement.scrollTop;
 //   if (st < lastScrollTop){
 //       document.getElementById("bottomup").style.bottom = "-10%";
 //   } else {

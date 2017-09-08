@@ -74,7 +74,7 @@ body{
 }
 .top h1{
     font-size: 1.5em;
-    color: #fafafa;    
+    color: #fafafa;
 }
 
 
@@ -111,7 +111,7 @@ body{
 .fa-chevron-right,
 .fa-chevron-left,
 .fa-arrow-up{
-    color: #424242;    
+    color: #424242;
 }
 #listingTable{
     display: -webkit-box;
